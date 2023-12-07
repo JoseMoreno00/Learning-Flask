@@ -1,0 +1,11 @@
+{% extends 'layout.html'%}
+
+{% block title %}Just have a problem!{% endblock%}
+{% block body%}
+<div class="header">
+    <h1 class="title404">Si existiera algo te lo muestro...</h1>
+</div>
+<div class="notfound">
+    <img src="{{ url_for('static', filename='images/404error.jpg') }}">
+</div>
+{% endblock %}

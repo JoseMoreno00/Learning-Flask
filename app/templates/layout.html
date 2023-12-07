@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <title>{% block title %}{% endblock %}</title>
+        <meta
+            name="description"
+            content="Description of the page less than 150 characters"
+        />
+        <link rel="icon" type="image/png" href="images/favicon.jpg" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}" />
+    </head>
+    <body>
+        {% block body%}{% endblock %}
+    </body>
+</html>
